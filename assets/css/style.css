@@ -6,3 +6,39 @@
     border:1px solid red;
     padding:5px 10px;
 }
+.heading5{
+    background: rosybrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.heading6{
+    color:salmon;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+/*div{
+    background-color: palegoldenrod;
+
+}*/
+#bg-img{
+ background-image: url("../images/pexels-andrea-piacquadio-3771836.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;   
+}
+.fonts
+{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boxmodel
+{
+    height:100px;
+    width:100px;
+    padding:30px;
+    margin:30px;
+    border:1px solid red;
+    background: #000;
+    color:white;
+    text-align: center;
+}
