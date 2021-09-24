@@ -19,3 +19,21 @@ var trainer={
     "ca":null,
     "status":"working"
 }
+var month='september'
+switch(month)
+{
+    case 'june':alert('month is june');
+                break;
+    case 'july':alert('month is july');
+                break;
+    case 'september':alert('month is september');
+                break;
+}
+add2numbers();
+function add2numbers()
+{
+    a=document.getElementById('valuea').value;
+    b=document.getElementById('valueb').value;
+    c=parseInt(a)+parseInt(b);
+    console.log(c);
+}
