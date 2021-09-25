@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Select operation</title>
+    </head>
+    <body>
+        Select the operation to be performed
+        <br><br>
+        <select id="operation" onchange="operate()">
+            <option value="Select the option">Select the option</option>
+            <option value="+" id="add">+</option>
+            <option value="-" id="sub">-</option>
+            <option value="*" id="mult">*</option>
+        </select>
+        <br><br>
+        <input type="text" id="valuea" class="inputs" style="display:none;">
+        <input type="text" id="valueb" class="inputs" style="display:none;">
+        <br><br>
+        <button type="button" id="sum" class="inputs" onclick="calculate()" style="display:none;">Calculate</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            function operate()
+            {
+                $('.inputs').show();
+            }
+            function calculate()
+            {
+                op=$('#operation').val();
+            if(op=='+')
+            {
+            A=$("#valuea").val();
+            B=$("#valueb").val();
+            C=parseInt(A)+parseInt(B);
+            alert("The sum is "+C);
+            }
+            else
+            if(op=='-')
+            {
+                A=$("#valuea").val();
+            B=$("#valueb").val();
+            C=parseInt(A)-parseInt(B);
+            alert("The difference is "+C);  
+            }
+            else 
+            if(op=="*")
+            {
+            A=$("#valuea").val();
+            B=$("#valueb").val();
+            C=parseInt(A)*parseInt(B);
+            alert("The Product is "+C); 
+            }
+        }
+        </script>
+    </body>
+</html>
